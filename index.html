@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark Wotherspoon — Painter of the Australian Landscape</title>
+<meta name="description" content="Paintings by Mark Wotherspoon. Plein air landscapes of the Northern Rivers, Dunmoochin and Cottles Bridge, with portraits and figure work. Studio in Lismore, New South Wales.">
+<meta name="author" content="Mark Wotherspoon">
+<link rel="stylesheet" href="css/style.css">
+<meta property="og:title" content="Mark Wotherspoon — Painter of the Australian Landscape">
+<meta property="og:description" content="Plein air landscapes of the Northern Rivers, with portraits and figure work. Studio in Lismore, New South Wales.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/display/hinterland-landscape-1.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230c110d'/><rect x='9' y='9' width='14' height='14' fill='%23ecefed'/></svg>">
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to the work</a>
+
+<header class="site-head">
+  <div class="grid">
+    <a class="wordmark" href="#top">Mark Wotherspoon</a>
+    <nav class="head-nav" aria-label="Elsewhere">
+      <a href="#about">About</a>
+      <a href="https://www.instagram.com/mark_wotherspoon_art/" rel="me noopener" target="_blank">Instagram</a>
+      <a href="mailto:mwothe011@gmail.com">Email</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="statement" aria-labelledby="statement-heading">
+    <div class="grid">
+      <h1 id="statement-heading" class="statement-text">
+        Painter of the Australian landscape. Studio in Lismore, in the
+        Northern Rivers of New South Wales — lately of Cottles Bridge,
+        Victoria.
+      </h1>
+    </div>
+  </section>
+
+  <section id="work" class="work" aria-labelledby="work-heading">
+    <h2 id="work-heading" class="visually-hidden">Paintings</h2>
+
+    <div class="grid">
+      <div class="filter-bar">
+        <div class="filters" role="group" aria-label="Filter paintings by subject">
+          <button type="button" class="filter" data-category="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-category="landscape" aria-pressed="false">Landscape</button>
+          <button type="button" class="filter" data-category="portrait" aria-pressed="false">Portrait</button>
+          <button type="button" class="filter" data-category="figure" aria-pressed="false">Figure</button>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <ul class="works" id="works" aria-labelledby="work-heading"></ul>
+      <p class="feedback" id="feedback" hidden></p>
+      <noscript>
+        <p class="feedback">
+          This gallery needs JavaScript to load. You can see Mark's work on
+          <a href="https://www.instagram.com/mark_wotherspoon_art/">Instagram</a>,
+          or email <a href="mailto:mwothe011@gmail.com">mwothe011@gmail.com</a>.
+        </p>
+      </noscript>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-heading">
+    <div class="grid">
+      <div class="about-text">
+        <h2 id="about-heading">About</h2>
+        <p>
+          Mark Wotherspoon was born in Melbourne. He studied Fine Art at the
+          Instituto de Allende in Mexico, and bronze casting with Ricardo
+          Bannister in the state of Guanajuato. On returning to Australia he
+          completed his studies at the Phillips Institute and Melbourne State
+          College.
+        </p>
+        <p>
+          He was awarded a grant from the Community Arts Board of the Australia
+          Arts Council to work on large urban street murals with the muralist
+          Geoff Hogg.
+        </p>
+        <p>
+          He paints outdoors, mostly. The landscapes here were made on location
+          around the Northern Rivers, at Dunmoochin and Cottles Bridge in
+          Victoria, and around Tenterfield. The portraits are largely of family
+          and of himself.
+        </p>
+        <p class="about-contact">
+          Enquiries — <a href="mailto:mwothe011@gmail.com">mwothe011@gmail.com</a><br>
+          <a href="https://www.instagram.com/mark_wotherspoon_art/" rel="me noopener" target="_blank">@mark_wotherspoon_art</a>
+        </p>
+      </div>
+      <figure class="about-figure">
+        <img src="assets/images/about/easel.jpg" alt="Mark Wotherspoon painting at an easel on location in open country." width="1200" height="900" loading="lazy" decoding="async">
+        <figcaption>Painting on location, Tenterfield.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="grid">
+    <p class="foot-name">Mark Wotherspoon</p>
+    <p class="foot-where">Lismore, Northern Rivers, NSW</p>
+    <p class="foot-links">
+      <a href="mailto:mwothe011@gmail.com">mwothe011@gmail.com</a>
+      <a href="https://www.instagram.com/mark_wotherspoon_art/" rel="me noopener" target="_blank">Instagram</a>
+    </p>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Painting viewer">
+  <div class="lightbox-inner" tabindex="-1" autofocus>
+    <button type="button" class="lb-close" id="lb-close" aria-label="Close viewer">Close</button>
+    <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Previous painting">
+      <span aria-hidden="true">←</span>
+    </button>
+    <figure class="lb-figure">
+      <img id="lb-image" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E">
+      <figcaption class="lb-caption">
+        <h3 id="lb-title"></h3>
+        <p class="lb-meta" id="lb-meta"></p>
+        <p class="lb-desc" id="lb-desc"></p>
+        <p class="lb-position" id="lb-position"></p>
+      </figcaption>
+    </figure>
+    <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Next painting">
+      <span aria-hidden="true">→</span>
+    </button>
+  </div>
+</dialog>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
